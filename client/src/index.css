@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*header */
+.header{
+    font-family: "Roboto Slab", serif;
+    display: flex;
+    align-items: center;
+    background: #e77600ad;
+    padding-left: 20px;
+}
+.header img{
+    margin-left: -3px;
+    height: 10vh;
+    width: 13vh;
+}
+.header a{
+    text-decoration: none;
+    color: #000000;
+    font-family: sans-serif;
+    font-size: 2.1vh;
+}
+.header ul{
+    display: flex;
+    align-items: center;
+    gap: 78px;
+    margin-left: 70vh;
+    font-size: 19px;
+}
+.header ul li{
+    list-style: none;
+}
+
+/* footer  */
+.footer{
+    display: flex;
+    gap: 61vh;
+    font-size: 2.2vh;
+    background: #000000fa;
+    color: #fff3f3;
+    padding: 20px;
+    height: 30vh;
+}
+.footer ul li{
+    list-style: none;
+    padding-bottom: 11px;
+}
+.footer .order ul,.footer .learn-more ul{
+    font-size: 15px;
+    padding-top: 8px;
+}
+.links{
+    padding: 11px 0px;
+    display: flex;
+    gap: 15px;
+}
+.links a{
+    color: white;
+}
+#copyright{
+    background-color: black;
+    color: white;
+    padding: 16px 214px;
+    font-size: 11px;
+}
+
+/*user-dashboard*/
+.user-dashboard{
+    display: flex;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    margin: 14px;
+    gap: 26px;
+}
+.cards .card{
+    display: flex;
+    flex-direction: column;
+    width: 386px;
+    margin-bottom: 20px;
+    border: 5px solid #795548;
+    border-radius: 27px;
+}
+.card #name{
+    margin-top: 8px;
+    font-family: "Roboto Slab", serif;
+    font-size: 19px;
+    margin-left: 9px;
+}
+.card #image{
+    height: 32vh;
+    border-radius: 22px;
+}
+.card #desc{
+    margin-top: 40px;
+    padding-left: 0.7vh;
+}
+.card button{
+    width: 210px;
+    padding: 5px 0px;
+    margin-left: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 39px;
+    background: #ff3912d4;
+    font-size: 15px;
+    margin: 6px 76px;
+    cursor: pointer;
+}
+.checkout{
+    width: 66vh;
+    margin-left: 5vh;
+    background: #ecf3c7e3;
+    padding-top: 6.6vh;
+    display: flex;
+    padding: 6.6vh 5vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+}
+.checkout h1{
+    padding-bottom: 1vh;
+}
+.checkout #discount{
+    color: green;
+    font-size: 2.1vh;
+}
+.listcart{
+    width: 40vh;
+    display: contents;
+}
+.listcart div{
+   display: flex;
+    align-items: center;
+    gap: 6.2vh;
+    font-size: 2.3vh;
+}
+.listcart h5{
+    min-width: 20vh;
+} 
+#close{
+    cursor: pointer;
+}
+
+/*Order page*/
+.pizza-orders,.custpizza-orders{
+    margin-top: 1.7vh;
+    border-bottom: 1.4px solid gray;
+    margin-left: 12px;
+    margin-right: 293px;
+    padding-bottom: 5px;
+    /* padding-right: 5vh; */
+    border-bottom: 1.4px solid #8080805c;
+}
+.custpizza-orders h3{
+    padding-top: 2vh;
+}
+.pizza-orders h3,.custpizza-orders h3{
+    margin-left: 12px;
+    margin-right: 7px;
+    padding-bottom: 5px;
+    border-bottom: 1.4px solid #8080805c;
+}
+.order{
+   display: flex;
+    gap: 21vh;
+    font-family: "Roboto Slab", serif;
+    padding: 9px 0px;
+    padding-left: 12px;
+    margin-right: -14vh;
+    justify-content: space-between;
+}
+#pizzaName{
+    font-size: 2.4vh;
+}
+#custPizzaName{
+    font-size: 2.4vh;
+}
+#status{
+    padding-right: 115px;
+}
+
+/* Admin-Dashboard */
+.admin-dashboard{
+    display: flex;
+    gap: 10vh;
+}
+.admin-dashboard .tabs{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vh;
+    font-family: "Lato", sans-serif;
+    background: #ff6b6b5c;
+}
+.admin-dashboard .tabs button{
+    padding: 7px 68px;
+    font-size: 1.8vh;
+    font-family: "Roboto Slab", serif;
+    padding: 7px 68px;
+    font-size: 1.8vh;
+    font-family: "Roboto Slab", serif;
+    border: 1px solid #0000009e;
+    background: #ffababf7;
+}
+.cust-order #table1{
+   height: 43vh;
+   margin-left: -7vh;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+#table1 h2,#table2 h2{
+    margin-right: -108vh;
+    text-decoration: underline;
+    padding-top: 1vh;
+    padding-bottom: 2.2vh;
+}
+.cust-order #table2{
+   height: 14vh;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+#table1 button,#table2 button,.stock button,.cust-stock button{
+    margin-left: 5vh;
+    padding: 4px 12px;
+    margin-right: 5vh;
+    background: #ff8f8f;
+    border-radius: 5px;
+}
+#order1,#contact1,#status1,#order2,#contact2,#status2{
+    padding-left: 5vh;
+}
+
+/* Stock */
+.stock{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1.2vh;
+    padding-bottom: 5vh;
+}
+.cust-stock{
+    text-align: center;
+    line-height: 3.7vh;
+    font-size: 2vh;
+}
+.pizza-stock{
+    margin-bottom: 7vh;
+    font-size: 2vh;
+     text-align: center;
+    line-height: 3.7vh;
+}
+.pizza-stock h2,.cust-stock h2{
+    text-decoration: underline;
+}
+
+/* Register */
+#register{
+    margin-left: 18vh;
+    padding: 9px;
+    /* background: #ffb8b8; */
+    border-radius: 8px;
+    border: 1px solid #795548;
+}
+.register,.login{
+    margin-left: 65vh;
+    margin-top: 22vh;
+    margin-right: 70vh;
+    background: gray;
+    flex-direction: column;
+    padding: 8vh 8.5vh;
+    border-radius: 7px;
+}
+.register form,.login form{
+    display: flex;
+    width: 30vh;
+    flex-direction: column;
+    line-height: 4.4vh;
+    font-size: 20px;
+}
+.register input,.login input{
+    padding: 0.7vh 1.4vh;
+}
+.register select{
+    padding: 0.7vh;
+}
+.register button,.login button,.checkout button{
+    padding: 8px 12px;
+    margin-top: 4vh;
+    background: #f96666f2;
+    color: white;
+    margin-bottom: 1vh;
+    cursor: pointer;
+}
+.register a,.login a{
+    text-decoration: none;
+    color: #080606;
+}
+
+/* CustomPizza Order */
+.customize{
+    padding-left: 11px;
+    margin: 2vh;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.customize select{
+    margin-right: 4vh;
+    padding: 1vh;
+    font-size: 1.6vh;
+}
+.cust-order{
+    font-size: 2.3vh;
+}
+.cust-order p{
+    margin-left: 21vh;
+}
+.customize .p1{
+    font-size: 2.1vh;
+    font-weight: 600;
+}
+
+/* Home Page */
+.home-page{
+    margin: 1vh;
+}
+.home-page .offers h3{
+    font-size: 2.5vh;
+    /* margin-top: 1vh; */
+    margin: 1vh;
+}
+.home-page .offers p{
+    font-size: 21px;
+    padding-bottom: 17px;
+}
+.features #img1{
+    width: 100%;
+    height: 90vh;
+}
+.features p{
+    font-size: 6vh;
+    text-align: center;
+    /* margin-top: -50vh; */
+    /* padding-top: 50px; */
+    padding: 50px;
+    color: gainsboro;
+    /* background: #e3bd8b; */
+    background: burlywood;
+}
+.features button{
+    padding: 2vh 6vh;
+    background: #ff3912d4;
+    font-size: 1.7vh;
+    margin-left: 78vh;
+    margin: 0vh 78vh;
+    border-radius: 5px;
+    border: 2.4px solid black;
+    cursor: pointer;
+    margin-bottom: 4vh;
+}
+.features a{
+    text-decoration: none;
+    color: black;
+}
+.best-sellers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+.best-selling{
+    width: 50vh;
+}
+.best-selling img{
+    width: 53vh;
+    height: 28vh;
+    margin-bottom: 15px;
+}
+.best-selling button{
+    padding: 9px 45px;
+    background: #ff5a3a;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-left: 37vh;
+    cursor: pointer;
+}
+.top-3{
+    display: flex;
+    gap: 108px;
+    justify-content: center;
+    margin-left: -4vh;
+    margin-top: 14px;
+}
+.ratings{
+    display: flex;
+    gap: 25vh;
+    justify-content: center;
+    font-size: 1.9vh;
+}
+.review{
+    text-align: center;
+    padding: 5vh;
+}
+.review h2{
+    padding-bottom: 3.9vh;
+    font-size: 3.5vh;
+}
+.rating p{
+    padding-top: 5px;
+}
+.features #img2{
+    width: 73vh;
+    height: 43vh;
+    margin: 5vh 53vh;
+}
+.features #cust-feature{
+    margin-top: 2vh;
+}
